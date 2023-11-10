@@ -1,0 +1,134 @@
+
+body{ 
+    background: linear-gradient(70deg,#201f1f,#200000,#b22c33,#201f1f,#201f1f);
+    background-size: 130% 300%;
+     display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr  ;
+    grid-template-areas: 
+    "nav nav nav nav nav "
+    "main main main main main"
+    "cartas cartas cartas cartas cartas"
+    "contacto contacto contacto contacto contacto"
+    "footer footer footer footer footer"
+    ;
+    gap: 50px;
+  
+}
+
+header{
+    color: white;
+    border-radius: 15px;
+    height: auto;
+    border: 2px solid whitesmoke;
+    grid-area: nav;  
+}
+
+.nester-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+}
+
+.acerca{
+    height: auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    text-align: end;
+    color: white;
+}
+
+
+main{
+    grid-area: main;
+   text-align: center;
+   color: white;
+}
+
+.cartas{
+    grid-area: cartas;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:10px;
+  
+}
+
+#proyectos{
+    border-radius: 15px;
+    height: auto;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+ #imagen{
+    height: 100px;
+    width: 12em ;
+    border:2px solid white;
+}
+
+
+
+
+.contacto{
+    height: auto;
+    display: flex;
+    grid-area: contacto;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+
+}
+
+.contacto1{
+    position: relative;
+
+    color: white;
+    flex-direction: row ;
+}
+.mensaje{
+    height: 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+
+.correo{
+    border-radius: 15px;
+   height: 20px;
+   border: 2px solid black;
+}
+
+.nombre{
+    height: 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+
+}
+
+.enviar{
+    border-radius: 15px;
+    text-align: center;
+    background: #b22c33;
+    border: 2px solid black;
+ 
+}
+footer{
+    display: grid;
+    height: 20vh;
+    background:rgb(0, 0, 0);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-area: footer;
+    text-align: center;
+ 
+}
+
+.nombre1{
+    position: relative;
+    color:white;
+    text-align: center;
+    top: 50px; 
+}
+
